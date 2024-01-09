@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Go Wedding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet" />
+    <!-- simplycountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- icon boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Go Wedding</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam :</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()">Lihat undangan</a>
+      </main>
+    </section>
+    <nav class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Gow</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Gow</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#galery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifs">Gifs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Di Selenggarakan Pada 30 Februari Di Jakarta, Jawa Barat.</h3>
+            <p>Oleh karna itu , dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara nikahan kami.</p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Figo Pratama</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur sequi consectetur veritatis dolorum, beatae magnam.</p>
+                <p>
+                  Putra dari Bpk. Lorem <br />
+                  dan <br />Ibu Ipsum
+                </p>
+              </div>
+              <div class="col-4">
+                <img src="img/menu2.jpg" alt="figo" class="img-responsive rounded-circle" />
+              </div>
+            </div>
+          </div>
+
+          <span class="heart"> <i class="bi bi-heart-fill"></i></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/menu3.jpg" alt="delvita" class="img-responsive rounded-circle" />
+              </div>
+              <div class="col-8">
+                <h3>GO figo</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur sequi consectetur veritatis dolorum, beatae magnam.</p>
+                <p>
+                  Putra dari Bpk. Ipsum<br />
+                  dan <br />Ibu Lorem
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamt">
+              Alamat : Balai Makarti Muktitama, <br />
+              Jl. TMP. Kalibata No.17 6, RT.6/RW.7, Rawajati, Kec. Pancoran, Kota Jakarta Selatan
+            </p>
+            <a href="https://maps.app.goo.gl/QTLpxP1tMRKvtwHF7" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
+            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang di langsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-4">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 12.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Sabtu, 28 Juni 2027</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Saat acara akad di harapkan kondusif.</div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>12.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Sabtu, 28 Juni 2027</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">Saat acara di harapkan kondusif.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kita Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod veniam error iste?</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(img/menu2.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama bertemu</h3>
+                    <span>28 juni 1002</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repellat excepturi. Non deserunt tempore temporibus!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/id/2/300/300)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Tumbuh</h3>
+                    <span>28 maret 1004</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, repellat excepturi. Non deserunt tempore temporibus!</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image" style="background-image: url(https://picsum.photos/id/1/300/300)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>28 maret 1007</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>ipsum dolor sit amet consectetur adipisicing elit. Cum, repellat excepturi. Non deserunt tempore temporibLoremus!</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galery" class="galery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memory Daun Pisang</span>
+            <h2>Galeri Foto</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod veniam error iste?</p>
+          </div>
+        </div>
+
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1">
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/4/1200/768" data-toggle="lightbox" data-caption="figo1" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/4/300/400" alt="figo1" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/7/1200/768" data-toggle="lightbox" data-caption="figo2" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/7/300/400" alt="figo2" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/19/1200/768" data-toggle="lightbox" data-caption="figo3" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/19/300/400" alt="figo3" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/11/1200/768" data-toggle="lightbox" data-caption="figo4" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/11/300/400" alt="figo4" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/12/1200/768" data-toggle="lightbox" data-caption="figo5" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/12/300/400" alt="figo5" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/13/1200/768" data-toggle="lightbox" data-caption="figo6" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/13/300/400" alt="figo6" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/100/1200/768" data-toggle="lightbox" data-caption="figo7" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/100/300/400" alt="figo7" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="https://picsum.photos/id/101/1200/768" data-toggle="lightbox" data-caption="figo8" data-gallery="mygallery">
+              <img src="https://picsum.photos/id/101/300/400" alt="figo8" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form ini untuk melakukan konfirmasi kehadiran</p>
+          </div>
+        </div>
+        <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST" action="https://script.google.com/macros/s/AKfycbzvtR-9iBB12Cz8f6s9GxiUkyVScdIuMrHHFFr_0EBi18BYD2JiION9gkQ8W5tSXJIE/exec" id="my-form">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih Salah Satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Kirim Hadiah</h2>
+            <span>Ungakapan Tanda Kasih</span>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptas?</p>
+          </div>
+        </div>
+        <div class="row justify-content-center text text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BCA</div>
+                32134245234 - FIGO PRATAMA DZ
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">Mandiri</div>
+                3213453544 - FIGO PRATAMA DZ
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">E-Walet</div>
+                08992567219 - FIGO PRATAMA DZ
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2024 Go Wedding. All Right Reserved.</small>
+            <small class="block">Design by <a href="https://www.instagram.com/figoprtma/" target="_blank">Figoprtma</a>.</small>
+            <ul>
+              <li>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-telegram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script>
+      simplyCountdown(" .simply-countdown", {
+        year: 2027, // required
+        month: 6, // required
+        day: 28, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "haru", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
+
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+
+    <script>
+      const rootElement = document.querySelector(":root");
+      function disableScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth ";
+        localStorage.setItem("opened", "true");
+      }
+
+      if (!localStorage.getItem("opened")) {
+        disableScroll();
+      }
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konfirmasi Terkirim!");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
